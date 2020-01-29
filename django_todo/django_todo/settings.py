@@ -26,7 +26,7 @@ SECRET_KEY = '847an=%ln5ze)-a)32w_vw64&99ska+wer5o90$&(wi+-#txxs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8080-f4b044fe-5baa-42dd-ac9f-41332cf39e19.ws-eu01.gitpod.io']
+ALLOWED_HOSTS = ['8080-f4b044fe-5baa-42dd-ac9f-41332cf39e19.ws-eu01.gitpod.io', 'blooming-earth-68113.herokuapp.com'],
 
 
 # Application definition
@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 #     }
 # }
 DATABASES = {
-    'default': dj_database_url.parse("postgres://zebgzmieqikkyd:90b0599c8fd28b4434bb728166fa8ad1dacc92b5d8fc192e343810e77c6b972b@ec2-176-34-237-141.eu-west-1.compute.amazonaws.com:5432/d68kjkjph3j8i0")
+    'default': dj_database_url.parse("postgres://oalakyqhubnxcm:899dd8ca77ac41faa0f41cfece6c2fa200c257bfdc1d2da9b3473b0f908304fa@ec2-23-21-13-88.compute-1.amazonaws.com:5432/d94in26juirapd")
     }
 
 
