@@ -1,4 +1,4 @@
 tasks:
   - name: alias
-    command: echo 'alias run="python3 /workspace/django-todo/django_todo/manage.py runserver 0.0.0.0:8080"' >> ~/.bashrc && source ~/.bashrc
+    command: echo 'alias run="python3 /workspace/django-todo/manage.py runserver 0.0.0.0:8080"' >> ~/.bashrc && source ~/.bashrc
     

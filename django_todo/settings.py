@@ -26,7 +26,7 @@ SECRET_KEY = '847an=%ln5ze)-a)32w_vw64&99ska+wer5o90$&(wi+-#txxs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8080-f4b044fe-5baa-42dd-ac9f-41332cf39e19.ws-eu01.gitpod.io', 'blooming-earth-68113.herokuapp.com'],
+ALLOWED_HOSTS = ['8080-f4b044fe-5baa-42dd-ac9f-41332cf39e19.ws-eu01.gitpod.io', 'blooming-earth-68113.herokuapp.com']
 
 
 # Application definition
