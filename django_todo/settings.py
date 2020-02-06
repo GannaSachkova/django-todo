@@ -8,7 +8,9 @@ https://docs.djangoproject.com/en/dev/topics/settings/
 
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/dev/ref/settings/
+
 """
+import os
 import dj_database_url
 from pathlib import Path
 
@@ -26,7 +28,13 @@ SECRET_KEY = '847an=%ln5ze)-a)32w_vw64&99ska+wer5o90$&(wi+-#txxs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8080-f4b044fe-5baa-42dd-ac9f-41332cf39e19.ws-eu01.gitpod.io', 'blooming-earth-68113.herokuapp.com']
+# ALLOWED_HOSTS = [os.environ.get('8080_HOSTNAME'),
+#                 os.environ.get('HOSTNAME')]
+
+ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'),
+                os.environ.get('HOSTNAME')]
+
+
 
 
 # Application definition
@@ -82,9 +90,12 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 #     }
 # }
 DATABASES = {
-    'default': dj_database_url.parse("postgres://oalakyqhubnxcm:899dd8ca77ac41faa0f41cfece6c2fa200c257bfdc1d2da9b3473b0f908304fa@ec2-23-21-13-88.compute-1.amazonaws.com:5432/d94in26juirapd")
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
 
+# DATABASES = {
+#     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+#     }
 
 # Password validation
 # https://docs.djangoproject.com/en/dev/ref/settings/#auth-password-validators
