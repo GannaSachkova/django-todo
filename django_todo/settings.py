@@ -17,6 +17,7 @@ from pathlib import Path
 if os.environ.get('DEVELOPMENT'):
     development = True
 else: 
+
     development = False
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
